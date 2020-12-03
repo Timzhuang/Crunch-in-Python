@@ -14,7 +14,8 @@ public class StackEntryPoint {
     }
 
     public static void main(String[] args) {
-        GatewayServer gatewayServer = new GatewayServer(new StackEntryPoint());
+        GatewayServer gatewayServer =
+            new GatewayServer(new StackEntryPoint());
         gatewayServer.start();
         System.out.println("Gateway Server Started");
     }
