@@ -1,12 +1,23 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/usr/local/lib/python3.8/site-packages/py4j-0.10.9.1-py3.8.egg/share/py4j/py4j0.10.9.1.jar",
-        "/Users/ishaanpota/Desktop/apache-crunch-0.15.0-src/crunch-core/target/crunch-core-0.15.0.jar",
-        "/usr/local/Cellar/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar",
-        "/usr/local/Cellar/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar",
-        "/Users/ishaanpota/Desktop/hadoop-hdfs-2.2.0.jar",
-        "/Users/ishaanpota/Desktop/hadoop-client-2.7.7.jar",
-        "/Users/ishaanpota/Desktop/hadoop-hdfs-2.7.3.jar"
-    ]
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "/usr/local/lib/python3.8/site-packages/py4j-0.10.9.1-py3.8.egg/share/py4j/py4j0.10.9.1.jar",
+            "/Users/ishaanpota/Desktop/apache-crunch-0.15.0-src/crunch-core/target/crunch-core-0.15.0.jar",
+            "/usr/local/Cellar/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.2.0.jar",
+            "/usr/local/Cellar/hadoop-2.2.0/share/hadoop/hdfs/hadoop-hdfs-2.2.0.jar",
+            "/Users/ishaanpota/Desktop/hadoop-hdfs-2.2.0.jar",
+            "/Users/ishaanpota/Desktop/hadoop-hdfs-2.7.3.jar",
+            "/Users/ishaanpota/Desktop/hadoop-common-2.2.0.jar",
+            "/Users/ishaanpota/Desktop/hadoop-mapreduce-client-core-2.2.0.jar",
+            "/Users/ishaanpota/Desktop/listenablefuture-1.0.jar",
+            "/Users/ishaanpota/Desktop/slf4j-jdk14-1.0.jar",
+            "/Users/ishaanpota/Desktop/commons-logging-1.2.jar",
+            "/Users/ishaanpota/Desktop/log4j-1.2.15.jar",
+            "/Users/ishaanpota/Desktop/jar_files/guava-29.0-jre.jar"
+        ],
+        "exclude": [
+            "/Users/ishaanpota/Desktop/hadoop-client-2.7.7.jar"
+        ]
+    }
 }

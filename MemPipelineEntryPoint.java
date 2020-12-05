@@ -1,6 +1,5 @@
 import org.apache.crunch.Pipeline;
 import org.apache.crunch.impl.mem.MemPipeline;
-import org.apache.hadoop.fs.FSDataOutputStream;
 import py4j.GatewayServer;
 
 public class MemPipelineEntryPoint {
