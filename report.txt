@@ -1,0 +1,135 @@
+For this lab, I wrote the code for tr2u.c and tr2b.c in a similar manner:
+I used arguments to the main function to take input, checked in the arguments were valid. If the from argument had a repeated character i threw an error, oth
+erwise I just replaced every occurence of from with the corresponding
+to. The difference was that I used getchar and putchar in tr2b.c and read
+and write in tr2u.c.
+
+Once I completed initial testing, I ran the strace commands,
+To generate a file with 5,000,000 bytes I used:
+`head --bytes=5000000 /dev/urandom > input.txt`
+
+I then ran 
+strace -c -o strace1.txt ./tr2b '?#' 'ab' < input.txt > outputb.txt
+strace -c -o strace2.txt ./tr2u '?#' 'ab' < input.txt > outputc.txt
+
+The -c option generates a summary of the number and type of system calls made
+The -o option stores this info in the file passed as an argument
+
+The first command for the buffered version, only makes 29 system calls, but the second one makes a whopping 10000027 system calls, 5000001 write and 5000002 
+read calls.
+
+strace -c -o strace3.txt ./tr2b '?#' 'ab' < input.txt
+strace -c -o strace4.txt ./tr2u '?#' 'ab' < input.txt
+
+I then ran these commands to print to the terminal
+The buffered version ran only 31 system calls, while the unbuffered version had 10000028 system calls, 5000002 read and write calls.
+
+We then run the following time commands to check how efficient these programs
+are:
+
+time ./tr2b '?#' 'ab' <input.txt >copy_bt.txt
+
+real  0m0.004s
+user  0m0.000s
+sys   0m0.002s
+
+time ./tr2u '?#' 'ab' <input.txt >copy_ut.txt
+
+real 0m9.489s
+user 0m1.158s
+sys  0m8.285s
+
+These two commands copy the changed file over to a new file
+
+time ./tr2b '?#' 'ab' <input.txt
+
+real 0m0.003s
+user 0m0.002s
+sys  0m0.000s
+
+time ./tr2u '?#' 'ab' <input.txt
+
+real 0m10.130s
+user 0m1.226s
+sys  0m7.454s
+
+These two commands write the changed file to the terminal, it is clear that tr2u.c takes more time to produce the same output, due to the large number of system calls being made
+---------------------------------------
+
+We use the head command to create files of different sizes and then
+measure the time they take and the number of comparisons they make.
+
+I created input.txt initially, with 196 lines:
+
+time ./sfrob < input.txt
+real 0m0.004s
+user 0m0.000s
+sys  0m0.003s
+
+time ./sfrobu < input.txt
+
+real 0m0.057s
+user 0m0.007s
+sys  0m0.049s
+
+with 1230 comparisons
+
+We then use an input file 2032 lines
+
+time ./sfrob < input.txt
+real 0m0.003s
+user 0m0.000s
+sys  0m0.002s
+
+
+time ./sfrobu < input.txt
+real 0m0.527s
+user 0m0.094s
+sys  0m0.426s
+
+19509 comparisons
+
+The last comparison has 19577 lines
+time ./sfrob < input.txt
+
+real 0m0.015s
+user 0m0.007s
+sys  0m0.004s
+
+time ./sfrobu < input.txt
+real 0m5.434s
+user 0m0.721s
+sys  0m4.666s
+
+260232 comparisons
+
+
+If we plot a graph for the number of lines vs number of comparisons,
+
+we get C= N * log N where C is number of comparisons and N is number of lines
+
+I then ran the following commands to compare all the files
+
+time ./sfrob < input.txt
+real 0m0.013s
+user 0m0.007s
+sys  0m0.004s
+time ./sfrobu < input.txt
+real 0m13.427s
+user 0m0.777s
+sys  0m4.836s
+time ./sfrobs < input.txt
+real 0m7.591s
+user 0m0.036s
+sys  0m0.105s
+
+time ./sfrobu -f < input.txt
+real 0m7.759s
+user 0m0.842s
+sys  0m4.704s
+time ./sfrobs -f < input.txt
+real 0m10.135s
+user 0m0.050s
+sys  0m0.116s
+
+We note that sfrobu performs the slowest consistently
