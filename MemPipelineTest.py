@@ -3,13 +3,11 @@ import sys
 
 gateway = JavaGateway()
 
-x = gateway.getInstance()
-
 
 inputPath = sys.argv[0]
 
 
-person_data = x.readTextFile(inputPath)
+person_data = gateway.jvm.readTextFromFileWrapper()
 
 
 print(person_data)
