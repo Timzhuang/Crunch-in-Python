@@ -17,7 +17,9 @@
             "/Users/ishaanpota/Desktop/commons-collections-3.2.2.jar",
             "/Users/ishaanpota/Desktop/commons-io-2.6.jar",
             "/Users/ishaanpota/Desktop/commons-configuration-1.10-sources.jar",
-            "/Users/ishaanpota/Desktop/commons-configuration-1.10.jar"
+            "/Users/ishaanpota/Desktop/commons-configuration-1.10.jar",
+            "/Users/ishaanpota/Desktop/hadoop-auth-3.0.0.jar",
+            "/Users/ishaanpota/Desktop/javassist-3.1.jar"
         ],
         "exclude": [
             "/Users/ishaanpota/Desktop/hadoop-client-2.7.7.jar"

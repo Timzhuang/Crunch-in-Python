@@ -15,14 +15,14 @@ public class MemPipelineEntryPoint {
 
     }
 
-    public MemPipelineEntryPoint getInstance() {
+    public Pipeline getInstance() {
 
-        return new MemPipelineEntryPoint();
+        return p;
         // Not sure if I should initialize in constructor or??
     }
 
-    public PCollection_ readTextFromFileWrapper() {
-        return new PCollection_(p.readTextFile("/"));
+    public static PCollection<String> readTextFromFileWrapper(MemPipeline p2) {
+        return p2.readTextFile("report.txt");
     }
 
     // Do i have to return all the static methods, not just getInstance???
