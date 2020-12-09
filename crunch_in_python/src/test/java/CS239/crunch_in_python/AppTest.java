@@ -17,4 +17,14 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    @Test
+    public void testApp() {
+    	App app = new App();
+    	try {
+			app.run(new String[] {"",""});
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    }
 }

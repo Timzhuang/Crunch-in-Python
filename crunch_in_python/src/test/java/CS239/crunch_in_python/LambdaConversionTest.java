@@ -7,6 +7,10 @@ public class LambdaConversionTest {
         return function.apply(42);
     }
 	
+	public static String[] callFunction2(Function<String, String[]> function) {
+        return function.apply("a b c");
+    }
+	
 public static void main(String[] args) {
 		
 		LambdaConversionTest app = new LambdaConversionTest();
