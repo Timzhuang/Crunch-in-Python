@@ -8,7 +8,8 @@ CRUNCH_JARFILE=../crunch/crunch-core/target/crunch-core-1.1.0-SNAPSHOT.jar
 JARFILES=$PY4J_JARFILE:$CRUNCH_JARFILE
 
 # MAINJAVA=CrunchEntryPoint
-MAINJAVA=GenericTestEntryPoint
+# MAINJAVA=GenericTestEntryPoint
+MAINJAVA=TupleTestEntryPoint
 
 javac -cp $JARFILES *.java
 java -cp .:$JARFILES $MAINJAVA
