@@ -7,7 +7,8 @@ import java.util.function.Function;
 
 public class PCollection_ {
 	
-	public static List<PCollection<String>> pCols = new ArrayList<PCollection<String>>();
+	//public static List<PCollection<String>> pCols = new ArrayList<PCollection<String>>();
+	public static List<PCollection> pCols = new ArrayList<PCollection>();
 	
 	public static void parallelDo_(int index, Function<String, String[]> lambda) {
 		

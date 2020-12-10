@@ -27,9 +27,9 @@ public class App extends Configured implements Tool
     	return 0;
     }
     
-    // a wrapper method for the create_MemPipeline method in the MemPipeline_ wrapper class
+    // a wrapper method for the create_MemPipeline method in the Pipeline_ wrapper class
     public void create_MemPipeline() {
-    	MemPipeline_.create_MemPipeline(this);
+    	Pipeline_.create_MemPipeline(this);
     }
     
     

@@ -12,7 +12,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.crunch.impl.mem.MemPipeline;
 
-public class MemPipeline_ {
+public class Pipeline_ {
 	
 	private static List<Pipeline> pipelines = new ArrayList<Pipeline>();
 
@@ -21,7 +21,7 @@ public class MemPipeline_ {
 		pipelines.add(new MRPipeline(app.getClass(), app.getConf()));
 	}
 	
-	public static void getInstance_() {
+	public static void getMemPipelineInstance_() {
 		// create a read Pipeline object identified by its index
 		pipelines.add(MemPipeline.getInstance());
 	}
