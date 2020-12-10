@@ -10,7 +10,7 @@ import org.apache.crunch.impl.mr.MRPipeline;
 import org.apache.crunch.types.writable.Writables;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
-
+import org.apache.crunch.impl.mem.MemPipeline;
 
 public class MemPipeline_ {
 	
@@ -19,6 +19,11 @@ public class MemPipeline_ {
 	public static void create_MemPipeline(App app) {
 		// create a read Pipeline object identified by its index
 		pipelines.add(new MRPipeline(app.getClass(), app.getConf()));
+	}
+	
+	public static void getInstance_() {
+		// create a read Pipeline object identified by its index
+		pipelines.add(MemPipeline.getInstance());
 	}
 	
 	public static void readTextFile_(int index, String inputPath) {

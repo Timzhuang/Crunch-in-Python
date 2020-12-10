@@ -7,7 +7,7 @@ import org.apache.hadoop.util.ToolRunner;
 import py4j.GatewayServer;
 
 /**
- * Hello world!
+ * need to debug: use JavaEntryPoint instead!
  *
  */
 public class App extends Configured implements Tool
@@ -19,10 +19,11 @@ public class App extends Configured implements Tool
     
     public int run(String[] args) throws Exception {
     	
-    	App app = new App();
+    	//App app = new App();
 	    //app is now the gateway.entry_point
-	    GatewayServer server = new GatewayServer(app);
+	    GatewayServer server = new GatewayServer(new App());
 	    server.start();
+	    System.out.println("good!");
     	return 0;
     }
     

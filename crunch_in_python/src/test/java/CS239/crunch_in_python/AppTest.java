@@ -11,18 +11,18 @@ public class AppTest
 {
     /**
      * Rigorous Test :-)
-     */
+     
     @Test
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
     }
+    */
     
     @Test
     public void testApp() {
-    	App app = new App();
     	try {
-			app.run(new String[] {"",""});
+			App.main(new String[] {"",""});
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

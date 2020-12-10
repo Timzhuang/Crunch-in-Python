@@ -23,4 +23,10 @@ public class PCollection_ {
 		PTable_.pTables.add(pCols.get(index).count());
 	}
 	
+	public static void tokenize_(int index) {
+		// call parallelDo with the Dofn object for the real PCollection object identified by the index
+		// add the result real PCollection object to the static list
+		pCols.add(pCols.get(index).parallelDo(new Tokenizer(), Writables.strings()));
+	}
+	
 }
