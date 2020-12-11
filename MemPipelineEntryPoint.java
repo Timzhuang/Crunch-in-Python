@@ -4,6 +4,8 @@ import org.apache.crunch.Pipeline;
 import org.apache.crunch.PCollection;
 import org.apache.crunch.impl.mem.MemPipeline;
 import py4j.GatewayServer;
+import org.apache.crunch.types.writable.Writables;
+import java.util.function.Function;
 
 public class MemPipelineEntryPoint {
 
@@ -19,6 +21,11 @@ public class MemPipelineEntryPoint {
 
         return p;
         // Not sure if I should initialize in constructor or??
+    }
+
+    public static PCollection<String> parallelDoWrapper(PCollection<String> lines) {
+
+        return lines.parallelDo(new Tokenizer(), Writables.strings());
     }
 
     public static PCollection<String> readTextFromFileWrapper(MemPipeline p2) {
