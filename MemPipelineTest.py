@@ -4,10 +4,6 @@ import sys
 gateway = JavaGateway()
 
 
-def shout(stringy):
-    return stringy.split()
-
-
 inputPath = sys.argv[0]
 
 x = gateway.getInstance()
