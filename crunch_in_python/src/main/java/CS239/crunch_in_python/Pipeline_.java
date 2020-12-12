@@ -33,10 +33,14 @@ public class Pipeline_ {
 		PCollection_.pCols.add(lines);
 	}
 	
-	public static void writeTextFile_(int index_pipeline, int index_pTable, String outputPath) {
+	public static void writeTextFile_(int index_pipeline, int index_pTable, String outputPath, String type) {
 		// call the writeTextFile method for the real pipeline object identified by the index_pipeline
 		// pass the real PTable object identified by the index_pTable to method
-		pipelines.get(index_pipeline).writeTextFile(PTable_.pTables.get(index_pTable), outputPath);
+		if (type.equals("PCollection")) {
+			pipelines.get(index_pipeline).writeTextFile(PCollection_.pCols.get(index_pTable), outputPath);
+		} else if (type.equals("PTable")) {
+			pipelines.get(index_pipeline).writeTextFile(PTable_.pTables.get(index_pTable), outputPath);
+		} 
 	}
 	
 	public static void done_(int index) {

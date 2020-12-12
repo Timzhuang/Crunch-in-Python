@@ -6,21 +6,19 @@ import org.apache.crunch.DoFn;
 import org.apache.crunch.Emitter;
 
 // LambdaWrapper: a DoFn class that apply the python-side lambda expression 
-public class LambdaWrapper extends DoFn<String, String>{
+public class LambdaWrapper extends DoFn<Double, Double>{
 	
-	// !!! str.split() does not work !!!
-	private Function<String, String[]> lambda; 
+	private Function<Double, Double> lambda; 
 	
 	// initialize with the python-side lambda expression wrapper
-	public LambdaWrapper(Function<String, String[]> lambda) {
+	public LambdaWrapper(Function<Double, Double> lambda) {
 		this.lambda = lambda;
 	}
 	
 	@Override
-    public void process(String line, Emitter<String> emitter) {
+    public void process(Double input, Emitter<Double> emitter) {
 		// apply the lambda expression wrapper on the input 
-        for (String word : lambda.apply(line)) {
-            emitter.emit(word);
-        }
+		emitter.emit(lambda.apply(input));
+
     }
 }
