@@ -1,11 +1,10 @@
-import java.nio.file.Path;
+package src.main.java.CS239.crunch;
 
 import org.apache.crunch.Pipeline;
 import org.apache.crunch.PCollection;
 import org.apache.crunch.impl.mem.MemPipeline;
 import py4j.GatewayServer;
 import org.apache.crunch.types.writable.Writables;
-import java.util.function.Function;
 
 public class MemPipelineEntryPoint {
 
@@ -29,7 +28,7 @@ public class MemPipelineEntryPoint {
     }
 
     public static PCollection<String> readTextFromFileWrapper(MemPipeline p2) {
-        return p2.readTextFile("report.txt");
+        return p2.readTextFile("/Users/ishaanpota/Desktop/ugh/src/main/java/CS239/crunch/report.txt");
     }
 
     // Do i have to return all the static methods, not just getInstance???

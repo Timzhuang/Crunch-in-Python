@@ -1,3 +1,5 @@
+package src.main.java.CS239.crunch;
+
 import org.apache.crunch.DoFn;
 import org.apache.crunch.Emitter;
 import com.google.common.base.Splitter;

@@ -1,3 +1,5 @@
+package src.main.java.CS239.crunch;
+
 import org.apache.commons.lang.ObjectUtils.Null;
 import org.apache.crunch.PCollection;
 
