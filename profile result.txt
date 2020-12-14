@@ -1,0 +1,156 @@
+benchmark 1:
+
+Crunch:
+1.2421099 s
+
+wrapper:
+
+ 1091 function calls in 0.987 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.359    0.359 <ipython-input-4-533dd06aca18>:16(readTextFile)
+        1    0.000    0.000    0.133    0.133 <ipython-input-4-533dd06aca18>:24(writeTextFile)
+        1    0.000    0.000    0.004    0.004 <ipython-input-4-533dd06aca18>:39(done)
+        1    0.000    0.000    0.302    0.302 <ipython-input-4-533dd06aca18>:6(__init__)
+        1    0.000    0.000    0.088    0.088 <ipython-input-5-a10c56d43c5b>:23(aggregate_count)
+        1    0.000    0.000    0.102    0.102 <ipython-input-5-a10c56d43c5b>:39(tokenize)
+        2    0.000    0.000    0.000    0.000 <ipython-input-5-a10c56d43c5b>:6(__init__)
+        1    0.000    0.000    0.000    0.000 <ipython-input-6-f0d58a3f6fb9>:6(__init__)
+        1    0.000    0.000    0.987    0.987 <ipython-input-8-a94a75f577ee>:2(word_count_test)
+        1    0.000    0.000    0.987    0.987 <string>:1(<module>)
+       60    0.000    0.000    0.000    0.000 __init__.py:1356(debug)
+        1    0.000    0.000    0.000    0.000 __init__.py:1600(getEffectiveLevel)
+       60    0.000    0.000    0.000    0.000 __init__.py:1614(isEnabledFor)
+        1    0.000    0.000    0.000    0.000 __init__.py:212(_acquireLock)
+        1    0.000    0.000    0.000    0.000 __init__.py:221(_releaseLock)
+        3    0.000    0.000    0.000    0.000 compat.py:92(ispython3bytestr)
+        3    0.000    0.000    0.000    0.000 compat.py:95(isbytearray)
+        2    0.000    0.000    0.000    0.000 enum.py:289(__call__)
+        2    0.000    0.000    0.000    0.000 enum.py:531(__new__)
+        1    0.000    0.000    0.000    0.000 enum.py:580(_missing_)
+        1    0.000    0.000    0.000    0.000 idna.py:147(encode)
+       30    0.000    0.000    0.986    0.033 java_gateway.py:1010(send_command)
+        1    0.000    0.000    0.000    0.000 java_gateway.py:1084(__init__)
+        1    0.000    0.000    0.001    0.001 java_gateway.py:1111(start)
+        1    0.000    0.000    0.000    0.000 java_gateway.py:1129(_authenticate_connection)
+       30    0.000    0.000    0.985    0.033 java_gateway.py:1178(send_command)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1221(__init__)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1258(_build_args)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1266(<listcomp>)
+        6    0.000    0.000    0.937    0.156 java_gateway.py:1295(__call__)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1456(__init__)
+        6    0.000    0.000    0.008    0.001 java_gateway.py:1506(__getattr__)
+       12    0.000    0.000    0.000    0.000 java_gateway.py:1610(__init__)
+       12    0.000    0.000    0.005    0.000 java_gateway.py:1620(__getattr__)
+        6    0.000    0.000    0.037    0.006 java_gateway.py:1688(__getattr__)
+       18    0.000    0.000    0.000    0.000 java_gateway.py:632(is_magic_member)
+       30    0.000    0.000    0.001    0.000 java_gateway.py:973(_get_connection)
+        1    0.000    0.000    0.001    0.001 java_gateway.py:982(_create_connection)
+       30    0.000    0.000    0.000    0.000 java_gateway.py:988(_give_back_connection)
+        3    0.000    0.000    0.000    0.000 protocol.py:177(escape_new_line)
+       39    0.000    0.000    0.000    0.000 protocol.py:214(smart_decode)
+        9    0.000    0.000    0.000    0.000 protocol.py:263(get_command_part)
+        6    0.000    0.000    0.000    0.000 protocol.py:305(get_return_value)
+        6    0.000    0.000    0.000    0.000 protocol.py:373(is_error)
+       30    0.000    0.000    0.000    0.000 protocol.py:380(is_fatal_error)
+        1    0.000    0.000    0.000    0.000 socket.py:139(__init__)
+        1    0.000    0.000    0.000    0.000 socket.py:221(makefile)
+        1    0.000    0.000    0.000    0.000 socket.py:563(__init__)
+       30    0.000    0.000    0.983    0.033 socket.py:575(readinto)
+       31    0.000    0.000    0.000    0.000 socket.py:614(readable)
+        1    0.000    0.000    0.000    0.000 socket.py:735(getaddrinfo)
+        2    0.000    0.000    0.000    0.000 socket.py:97(_intenum_converter)
+        1    0.000    0.000    0.000    0.000 {built-in method _socket.getaddrinfo}
+        1    0.000    0.000    0.987    0.987 {built-in method builtins.exec}
+      122    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       47    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       30    0.000    0.000    0.000    0.000 {method '_checkClosed' of '_io._IOBase' objects}
+       30    0.000    0.000    0.000    0.000 {method '_checkReadable' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       30    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.001    0.001    0.001    0.001 {method 'connect' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       31    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+       60    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+       30    0.000    0.000    0.000    0.000 {method 'pop' of 'collections.deque' objects}
+       30    0.000    0.000    0.983    0.033 {method 'readline' of '_io.BufferedReader' objects}
+       30    0.982    0.033    0.982    0.033 {method 'recv_into' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        9    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+       30    0.002    0.000    0.002    0.000 {method 'sendall' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'bytes' objects}
+       54    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       30    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+
+
+
+benchmark 2:
+
+Crunch:
+1.6346598 s
+
+wrapper:
+
+
+         1058 function calls in 0.842 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.048    0.048 <ipython-input-4-533dd06aca18>:16(readTextFile)
+        1    0.000    0.000    0.194    0.194 <ipython-input-4-533dd06aca18>:24(writeTextFile)
+        1    0.000    0.000    0.001    0.001 <ipython-input-4-533dd06aca18>:39(done)
+        1    0.000    0.000    0.002    0.002 <ipython-input-4-533dd06aca18>:6(__init__)
+        1    0.000    0.000    0.393    0.393 <ipython-input-5-a10c56d43c5b>:23(aggregate_count)
+        1    0.000    0.000    0.203    0.203 <ipython-input-5-a10c56d43c5b>:39(tokenize)
+        2    0.000    0.000    0.000    0.000 <ipython-input-5-a10c56d43c5b>:6(__init__)
+        1    0.000    0.000    0.000    0.000 <ipython-input-6-f0d58a3f6fb9>:6(__init__)
+        1    0.000    0.000    0.842    0.842 <ipython-input-8-a94a75f577ee>:2(word_count_test)
+        1    0.000    0.000    0.842    0.842 <string>:1(<module>)
+       60    0.000    0.000    0.000    0.000 __init__.py:1356(debug)
+       60    0.000    0.000    0.000    0.000 __init__.py:1614(isEnabledFor)
+        3    0.000    0.000    0.000    0.000 compat.py:92(ispython3bytestr)
+        3    0.000    0.000    0.000    0.000 compat.py:95(isbytearray)
+       30    0.000    0.000    0.841    0.028 java_gateway.py:1010(send_command)
+       30    0.000    0.000    0.841    0.028 java_gateway.py:1178(send_command)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1221(__init__)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1258(_build_args)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1266(<listcomp>)
+        6    0.000    0.000    0.834    0.139 java_gateway.py:1295(__call__)
+        6    0.000    0.000    0.000    0.000 java_gateway.py:1456(__init__)
+        6    0.000    0.000    0.001    0.000 java_gateway.py:1506(__getattr__)
+       12    0.000    0.000    0.000    0.000 java_gateway.py:1610(__init__)
+       12    0.000    0.000    0.003    0.000 java_gateway.py:1620(__getattr__)
+        6    0.000    0.000    0.003    0.001 java_gateway.py:1688(__getattr__)
+       18    0.000    0.000    0.000    0.000 java_gateway.py:632(is_magic_member)
+       30    0.000    0.000    0.000    0.000 java_gateway.py:973(_get_connection)
+       30    0.000    0.000    0.000    0.000 java_gateway.py:988(_give_back_connection)
+        3    0.000    0.000    0.000    0.000 protocol.py:177(escape_new_line)
+       39    0.000    0.000    0.000    0.000 protocol.py:214(smart_decode)
+        9    0.000    0.000    0.000    0.000 protocol.py:263(get_command_part)
+        6    0.000    0.000    0.000    0.000 protocol.py:305(get_return_value)
+        6    0.000    0.000    0.000    0.000 protocol.py:373(is_error)
+       30    0.000    0.000    0.000    0.000 protocol.py:380(is_fatal_error)
+       30    0.000    0.000    0.838    0.028 socket.py:575(readinto)
+       30    0.000    0.000    0.000    0.000 socket.py:614(readable)
+        1    0.000    0.000    0.842    0.842 {built-in method builtins.exec}
+      121    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       42    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       30    0.000    0.000    0.000    0.000 {method '_checkClosed' of '_io._IOBase' objects}
+       30    0.000    0.000    0.000    0.000 {method '_checkReadable' of '_io._IOBase' objects}
+       30    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       30    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+       60    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+       30    0.000    0.000    0.000    0.000 {method 'pop' of 'collections.deque' objects}
+       30    0.000    0.000    0.839    0.028 {method 'readline' of '_io.BufferedReader' objects}
+       30    0.838    0.028    0.838    0.028 {method 'recv_into' of '_socket.socket' objects}
+        9    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+       30    0.002    0.000    0.002    0.000 {method 'sendall' of '_socket.socket' objects}
+       54    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       30    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
