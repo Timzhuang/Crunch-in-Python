@@ -19,7 +19,15 @@
             "/Users/ishaanpota/Desktop/commons-configuration-1.10-sources.jar",
             "/Users/ishaanpota/Desktop/commons-configuration-1.10.jar",
             "/Users/ishaanpota/Desktop/hadoop-auth-3.0.0.jar",
-            "/Users/ishaanpota/Desktop/javassist-3.12.1.GA.jar"
+            "/Users/ishaanpota/Desktop/javassist-3.12.1.GA.jar",
+            "/Users/ishaanpota/Desktop/commons-cli-1.4.jar",
+            "/Users/ishaanpota/Desktop/avro-1.10.1.jar",
+            "/Users/ishaanpota/Desktop/protobuf-java-4.0.0-rc-2.jar",
+            "/Users/ishaanpota/Desktop/htrace-core-3.1.0-incubating.jar",
+            "/Users/ishaanpota/Desktop/commons-codec-1.10.jar",
+            "/Users/ishaanpota/Desktop/hadoop-mapreduce-client-shuffle-2.2.0.jar",
+            "/Users/ishaanpota/Desktop/junit-4.11.jar",
+            "/Users/ishaanpota/Desktop/hamcrest-core-1.2.jar"
         ],
         "exclude": [
             "/Users/ishaanpota/Desktop/hadoop-client-2.7.7.jar"

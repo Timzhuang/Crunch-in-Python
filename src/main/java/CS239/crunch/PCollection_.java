@@ -1,12 +1,19 @@
 package src.main.java.CS239.crunch;
 
+import org.apache.crunch.PTable;
 import org.apache.commons.lang.ObjectUtils.Null;
 import org.apache.crunch.PCollection;
+import org.apache.crunch.types.writable.Writables;
 
 public class PCollection_ {
 
-    public PCollection_(PCollection<String> p) {
+    public static PTable count(PCollection p) {
+        return p.count();
+    }
 
+    public static PCollection<String> tokenize(PCollection<String> lines) {
+
+        return lines.parallelDo(new Tokenizer(), Writables.strings());
     }
 
 }
